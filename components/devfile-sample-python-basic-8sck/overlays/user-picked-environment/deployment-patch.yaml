@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-8sck
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-anom/devfile-sample-python-basic-8sck@sha256:1530fd339e7441a70d981279594760d51cf390a1ef808e7032b052f92ff00e03
+        name: my-python
+        resources: {}
+status: {}
